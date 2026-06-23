@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Collaboration Tool</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>CollabTool</h2>
+        </div>
+
+        <ul>
+<ul>
+
+    <li>
+    <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+        Dashboard
+    </a>
+</li>
+
+<li class="active">
+    <a href="projects.html">
+        <i class="fa-solid fa-folder"></i>
+        Projects
+    </a>
+</li>
+
+    <li>
+        <a href="kanban.html">
+            <i class="fa-solid fa-table-columns"></i>
+            Kanban
+        </a>
+    </li>
+
+    <li>
+        <a href="team.html">
+            <i class="fa-solid fa-users"></i>
+            Team
+        </a>
+    </li>
+
+    <li>
+        <a href="timeline.html">
+            <i class="fa-solid fa-calendar-days"></i>
+            Timeline
+        </a>
+    </li>
+
+    <li>
+        <a href="chat.html">
+            <i class="fa-solid fa-comments"></i>
+            Chat
+        </a>
+    </li>
+
+    <li>
+        <a href="files.html">
+            <i class="fa-solid fa-file"></i>
+            Files
+        </a>
+    </li>
+
+    <li>
+        <a href="settings.html">
+            <i class="fa-solid fa-gear"></i>
+            Settings
+        </a>
+    </li>
+
+</ul>
+            
+
+            
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+        <!-- Navbar -->
+        <nav>
+
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text" 
+                placeholder="Search Project">
+
+            </div>
+
+            <div class="profile">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <img src="images/profile.png">
+
+            </div>
+
+        </nav>
+
+
+        <!-- Welcome -->
+
+        <div class="welcome">
+
+            <h1>
+                projects📁
+            </h1>
+
+            <p>
+                view and manage all your project.
+            </p>
+
+        </div>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Active Projects</h3>
+        <h1>8</h1>
+    </div>
+
+    <div class="card">
+        <h3>Completed Projects</h3>
+        <h1>4</h1>
+    </div>
+
+    <div class="card">
+        <h3>Team Members</h3>
+        <h1>15</h1>
+    </div>
+
+</div>
+        <!-- Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Total Projects</h3>
+
+                <h1>12</h1>
+
+                <span>+2 This Month</span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Pending Tasks</h3>
+
+                <h1>28</h1>
+
+                <span>5 Overdue</span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <h1>90</h1>
+
+                <span>85%</span>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Team Members</h3>
+
+                <h1>15</h1>
+
+                <span>12 Online</span>
+
+            </div>
+
+        </div>
+        <!-- Analytics Section -->
+
+<div class="analytics-section">
+
+    <!-- Chart Card -->
+
+    <div class="chart-card">
+
+        <h2>Weekly Project Statistics</h2>
+
+        <canvas id="myChart"></canvas>
+
+    </div>
+
+    <!-- Calendar Card -->
+
+    <div class="calendar-card">
+
+        <h2>Project Calendar</h2>
+
+        <div class="calendar">
+
+            <h3>June 2026</h3>
+
+            <table>
+
+                <tr>
+                    <th>S</th>
+                    <th>M</th>
+                    <th>T</th>
+                    <th>W</th>
+                    <th>T</th>
+                    <th>F</th>
+                    <th>S</th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+
+                <tr>
+                    <td>21</td>
+                    <td class="today">22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Dashboard Content -->
+
+<div class="dashboard-content">
+
+    <!-- Left Section -->
+
+    <div class="left-panel">
+
+        <!-- Project Progress -->
+
+        <div class="progress-box">
+
+            <h2>Project Progress</h2>
+
+            <div class="progress-circle">
+
+                <div class="circle">
+                    <span>78%</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Recent Activity -->
+
+        <div class="activity-box">
+
+            <h2>Recent Activity</h2>
+
+            <ul>
+
+                <li>✅ Rahul completed Login Module</li>
+
+                <li>📁 Priya uploaded Design Files</li>
+
+                <li>📝 Aman created new Task</li>
+
+                <li>📅 Team Meeting at 4 PM</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- Right Section -->
+
+    <div class="right-panel">
+
+        <!-- Team Members -->
+
+        <div class="team-box">
+
+            <h2>Team Members</h2>
+
+            <div class="member">
+
+                <img src="images/profile.png">
+
+                <div>
+
+                    <h4>Shreya</h4>
+
+                    <span>Project Manager</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="member">
+
+                <img src="images/profile.png">
+
+                <div>
+
+                    <h4>Rahul</h4>
+
+                    <span>Frontend Developer</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="member">
+
+                <img src="images/profile.png">
+
+                <div>
+
+                    <h4>Priya</h4>
+
+                    <span>UI Designer</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Upcoming Deadlines -->
+
+        <div class="deadline-box">
+
+            <h2>Upcoming Deadlines</h2>
+
+
+            <div class="deadline">
+
+                <h4>UI Design</h4>
+
+                <p>Tomorrow</p>
+
+            </div>
+
+
+            <div class="deadline">
+
+                <h4>Database Module</h4>
+
+                <p>2 Days Left</p>
+
+            </div>
+
+
+            <div class="deadline">
+
+                <h4>Project Presentation</h4>
+
+                <p>Friday</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>  <!-- End of Main -->
+
+</div>  <!-- End of Container -->
+
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
+
+</body>
+</html>
